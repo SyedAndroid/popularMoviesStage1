@@ -24,7 +24,7 @@ public class NetworkUtils {
     private static final String TOP_RATED_QUERY_PARAM = "top_rated";
     private static final String API_QUERY_PARAM = "?api_key=";
 
-    private static final String API_KEY = "2022266f5eeed7270df551dc46ac8527";
+    private static final String API_KEY = "Enter your key here";
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
 
 
