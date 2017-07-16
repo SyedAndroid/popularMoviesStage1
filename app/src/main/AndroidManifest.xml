@@ -18,9 +18,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".DetailsActivity"
-            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".DetailsActivity" />
 
+        <provider
+            android:name=".Data.MovieProvider"
+            android:authorities="com.example.syed.popularmoviesstage1"
+            android:exported="false" />
+
+        <activity
+            android:name=".ReviewActivity"
+            android:label="@string/title_activity_review"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

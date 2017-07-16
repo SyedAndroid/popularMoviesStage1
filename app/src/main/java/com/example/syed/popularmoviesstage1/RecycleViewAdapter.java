@@ -26,11 +26,6 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
         this.movies = movies;
     }
 
-    public interface MovieClickListener {
-        public void movieClickLister(int position);
-    }
-
-
     @Override
     public MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         Context context = parent.getContext();
@@ -52,7 +47,11 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
     @Override
     public int getItemCount() {
-        return 20;
+        return movies.size();
+    }
+
+    public interface MovieClickListener {
+        void movieClickLister(int position);
     }
 
     public class MovieViewHolder extends RecyclerView.ViewHolder
@@ -62,7 +61,7 @@ public class RecycleViewAdapter extends RecyclerView.Adapter<RecycleViewAdapter.
 
         public MovieViewHolder(View itemView) {
             super(itemView);
-            thumbnail = (ImageView) itemView.findViewById(R.id.thumbnail);
+            thumbnail = itemView.findViewById(R.id.thumbnail);
             itemView.setOnClickListener(this);
 
         }

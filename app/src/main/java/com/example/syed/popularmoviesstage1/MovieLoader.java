@@ -5,6 +5,9 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.net.Uri;
 
+import com.example.syed.popularmoviesstage1.Utils.JSONUtils;
+import com.example.syed.popularmoviesstage1.Utils.NetworkUtils;
+
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;

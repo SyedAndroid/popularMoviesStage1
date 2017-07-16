@@ -2,11 +2,21 @@
     <string name="app_name">Popular Movies</string>
     <string name="sort_popular">Popular</string>
     <string name="sort_top">Top Rated</string>
+    <string name="sort_fav">Favorites</string>
+    <string name="sort_now">Now Playing</string>
+    <string name="sort_upcoming">Upcoming</string>
+
+    <string name="trailer">VIDEOS</string>
 
     <string name="detail_title">Title: </string>
     <string name="details_release">Release date: </string>
     <string name="details_rating">Average Ratings: </string>
-    <string name="details_synopsis">Synopsis</string>
+    <string name="button_fav">Mark as Favorite</string>
+    <string name="details_synopsis">SYNOPSIS</string>
+    <string name="button_rev">Reviews</string>
+    <string name="title_activity_review">ReviewActivity</string>
 
+    <string name="rev">Reviewer Name:</string>
+    <string name="summary">Summary</string>
 
 </resources>

@@ -1,4 +1,4 @@
-package com.example.syed.popularmoviesstage1;
+package com.example.syed.popularmoviesstage1.Utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;

@@ -1,9 +1,11 @@
-package com.example.syed.popularmoviesstage1;
+package com.example.syed.popularmoviesstage1.Utils;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.util.Log;
+
+import com.example.syed.popularmoviesstage1.MainActivity;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -17,11 +19,12 @@ import java.util.Scanner;
  */
 
 public class NetworkUtils {
-    private static final String BASE_URL = "https://api.themoviedb.org/3";
-    private static final String POPULAR_QUERY_PARAM = "/movie/popular";
-    private static final String TOP_RATED_QUERY_PARAM = "/movie/top_rated";
+    private static final String BASE_URL = "https://api.themoviedb.org/3/movie/";
+    private static final String POPULAR_QUERY_PARAM = "popular";
+    private static final String TOP_RATED_QUERY_PARAM = "top_rated";
     private static final String API_QUERY_PARAM = "?api_key=";
-    private static final String API_KEY = "PUT YOUR KEY HERE";
+
+    private static final String API_KEY = "2022266f5eeed7270df551dc46ac8527";
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
 
 

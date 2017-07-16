@@ -7,13 +7,13 @@ import android.graphics.Bitmap;
  */
 
 public class Movie {
+    Bitmap bitmap;
     private int id;
     private String title;
     private String posterPath;
     private String synopsis;
     private double ratings;
     private String releaseDate;
-    Bitmap bitmap;
 
     public Movie(int id, String title, String posterpath, String synopsis, double ratings, String releaseDate) {
         this.id = id;
@@ -22,6 +22,10 @@ public class Movie {
         this.synopsis = synopsis;
         this.ratings = ratings;
         this.releaseDate = releaseDate;
+    }
+
+    public Movie(Bitmap bitmap) {
+        this.bitmap = bitmap;
     }
 
     public int getId() {
